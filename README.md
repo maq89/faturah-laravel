@@ -1,6 +1,6 @@
 # Fatural Laravel
 
-##Installation
+## Installation
 Begin by installing this package through Composer. Just run following command to terminal-
 
 ```php
@@ -24,7 +24,8 @@ Now add the alias.
 ],
 ```
 
-###Example:
+
+### Example:
 ```php
 Route::get('/faturah', function () {
     $faturah = Faturah::getInstance('xxxxxxxxxxxxxxxxxxxxxxxxxxxx1012', 'ece00dc2-9a57-4403-a86b-a2be3eccae53');
