@@ -1,0 +1,19 @@
+{
+    "name": "maq89/faturah-laravel",
+    "license": "LGPL-3.0",
+    "description": "Faturah Laravel",
+    "authors": [
+        {
+            "name": "Musaib Qureshi",
+            "email": "maq.s89@gmail.com"
+        }
+    ],
+    "require": {
+    },
+	"autoload": {
+        "psr-0": {
+            "Damas\\Faturah": "src/"
+        }
+    },
+   "minimum-stability": "dev"
+}
