@@ -28,7 +28,9 @@ Now add the alias.
 ### Example:
 ```php
 Route::get('/faturah', function () {
-    $faturah = Faturah::getInstance('xxxxxxxxxxxxxxxxxxxxxxxxxxxx1012', 'ece00dc2-9a57-4403-a86b-a2be3eccae53');
+    $merchantCode = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx1012';
+    $secureKey = 'ece00dc2-9a57-4403-a86b-a2be3eccae53';
+    $faturah = Faturah::getInstance($merchantCode, $secureKey);
     $faturah->order->addItem('2', 'Sumsung', 'Sumsung Mobile 6600 Silver Color', '1', 20);
     //$faturah->order->addItem('1', 'Nokia Mobile', 'Nokia Mobile 6600 Silver Color', '1', 10); // Add another Item
     $faturah->order->customerInfo('cutomer name', 'customer@domain.com', '1234567890', 'en');
